@@ -1,0 +1,6 @@
+Flask_Cors==3.0.7
+requests==2.22.0
+urllib3==1.25.8
+pymongo==3.8.0
+Flask==1.0.3
+beautifulsoup4==4.9.3
