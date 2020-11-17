@@ -62,26 +62,28 @@ def ImportData():
     rucs=[]
     db=connection()
     for file in glob.glob("*.txt"):
-        with open(file) as fp:
-            for line in fp:
-                data=line.splitlines()[0].split("|")
-                razon=data[1].split(", ")
-                if len(razon)<2:
-                    rucs.append({
-                        "documento":data[0],
-                        "dv":data[2],
-                        "razonsocial":razon[0]
-                    })
-                else:
-                    rucs.append({
-                        "documento":data[0],
-                        "dv": data[2],
-                        "razonsocial":razon[1]+" "+razon[0]
-                    })
-        if os.path.exists(file):
-            os.remove(file)
-        else:
-            print("The file does not exist :c")
+        if file != 'requirements.txt':
+            with open(file) as fp:
+                for line in fp:
+                    data=line.splitlines()[0].split("|")
+                    razon=data[1].split(", ")
+
+                    if len(razon)<2:
+                        rucs.append({
+                            "documento":data[0],
+                            "dv":data[2],
+                            "razonsocial":razon[0]
+                        })
+                    else:
+                        rucs.append({
+                            "documento":data[0],
+                            "dv": data[2],
+                            "razonsocial":razon[1]+" "+razon[0]
+                        })
+            if os.path.exists(file):
+                os.remove(file)
+            else:
+                print("The file does not exist :c")
     try:
         db.contribuyentes.insert_many(rucs)
         db.contribuyentes.create_index("documento", unique=True)
@@ -89,3 +91,5 @@ def ImportData():
         pass
     except BulkWriteError as exc:
         exc.details
+
+ImportData()
