@@ -1,4 +1,4 @@
-# rucpy loading...
+# rucpy
 ```
 $ pip o pip3 install -r requirements.txt
 ```
