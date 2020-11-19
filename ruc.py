@@ -91,5 +91,3 @@ def ImportData():
         pass
     except BulkWriteError as exc:
         exc.details
-
-ImportData()
