@@ -10,7 +10,7 @@ Go to http://127.0.0.1:5000/api/<CI/RUC> O <nombre/s> o <apellido/s>
 La API esta alojada en https://rucs.datospy.org
 
 # Ejemplo de Uso con Javascript
-```
+```js
 var xhr = new XMLHttpRequest();
 var url = 'https://rucs.datospy.org/api/1234567';
 xhr.open('GET', url, true);       
