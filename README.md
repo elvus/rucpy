@@ -7,7 +7,7 @@ Go to http://127.0.0.1:5000/api/<CI/RUC> O <nombre/s> o <apellido/s>
 ```
 # API
 
-La API esta alojada en https://rucs.datospy.org
+La API se encuentra alojada en https://rucs.datospy.org
 
 # Ejemplo de Uso con Javascript
 ```js
