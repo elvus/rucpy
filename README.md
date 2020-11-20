@@ -17,4 +17,4 @@ Realizar una petición a https://rucs.datospy.org/api/<CI/RUC> O <nombre/s> o <a
 ```
 [{"_id": {"$oid": "5fb46e9694275e426db580bd"}, "documento": "1234567", "dv": "9", "razonsocial": "Nombre Apellido"}]
 ```
-**Obs.** Los datos se actualizan periodicamente.
+**Obs.** `Los datos se actualizan periodicamente.`
