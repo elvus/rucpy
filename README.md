@@ -1,5 +1,5 @@
 # rucpy
-```
+```bash
 $ pip o pip3 install -r requirements.txt
 $ Ejecutar la funcion `ImportData` ubicada en ruc.py
 $ FLASK_APP=rucapi.py flask run
