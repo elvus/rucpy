@@ -22,7 +22,15 @@ xhr.onreadystatechange = function(){
 xhr.send() 
 ```
 **Repuesta**
-```
-[{"_id": {"$oid": "5fb46e9694275e426db580bd"}, "documento": "1234567", "dv": "9", "razonsocial": "Nombre Apellido"}]
+```json
+[
+  {
+    "_id": {"$oid": "5fb46e9694275e426db580bd"}, 
+    "documento": "1234567", 
+    "dv": "9", 
+    "razonsocial": 
+    "Nombre Apellido"
+  }
+]
 ```
 **Obs.** Los datos se actualizan periodicamente.
